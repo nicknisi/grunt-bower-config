@@ -1,0 +1,48 @@
+{
+  "name": "grunt-bower-installer",
+  "description": "Bower Installer Task",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nicknisi/grunt-bower-installer",
+  "author": {
+    "name": "Nick Nisi",
+    "email": "nick@nisi.org",
+    "url": "www.nicknisi.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nicknisi/grunt-bower-installer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicknisi/grunt-bower-installer/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nicknisi/grunt-bower-installer/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0",
+    "bower": "~0.8.5"
+  },
+  "keywords": [
+    "gruntplugin",
+    "bower"
+  ],
+  "dependencies": {
+    "bower": "~0.8.5"
+  }
+}
