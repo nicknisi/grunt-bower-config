@@ -16,15 +16,9 @@ module.exports = function(grunt) {
             dest = component.install.path,
             componentDir = bowerrc.directory;
         grunt.util._.forEach(sources, function (file, source) {
-            var files,
-                srcPath = process.cwd() + '/'+ componentDir + '/' + source + '/',
-                destPath = process.cwd() + '/' + dest + '/' + source + '/';
-
-            if (file instanceof Array) {
-                files = file;
-            } else {
-                files = [file];
-            }
+            var srcPath = process.cwd() + '/'+ componentDir + '/' + source + '/',
+                destPath = process.cwd() + '/' + dest + '/' + source + '/',
+                files = grunt.file.expand({cwd: srcPath}, file);
 
             files.forEach(function (file) {
                 var filename = path.basename(file);
