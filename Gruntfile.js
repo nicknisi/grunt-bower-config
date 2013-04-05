@@ -33,6 +33,14 @@ module.exports = function(grunt) {
             default: {
                 options: {
                     componentFile: 'component.json'
+                },
+                path: 'tmp',
+                sources: {
+                    'jquery': '*.js',
+                    'jquery-ui': [
+                        'ui/jquery-ui.custom.js',
+                        'themes/smoothness/jquery-ui.css'
+                    ]
                 }
             }
         },
