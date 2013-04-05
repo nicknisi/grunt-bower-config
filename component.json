@@ -8,7 +8,7 @@
   "install": {
     "path": "tmp",
     "sources": {
-      "jquery": "jquery.js",
+      "jquery": "*.js",
       "jquery-ui": [
         "ui/jquery-ui.custom.js",
         "themes/smoothness/jquery-ui.css"
