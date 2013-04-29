@@ -1,7 +1,7 @@
 {
   "name": "grunt-bower-config",
   "description": "Bower Installer Task",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/nicknisi/grunt-bower-config",
   "author": {
     "name": "Nick Nisi",
@@ -43,6 +43,6 @@
     "bower"
   ],
   "dependencies": {
-    "bower": "~0.8.5"
+    "bower": "~0.9.2"
   }
 }

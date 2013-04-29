@@ -2,8 +2,8 @@
   "name": "grunt-bower-installer",
   "version": "0.1.0",
   "dependencies": {
-    "jquery-ui": "~1.10.1",
-    "jquery": "~1.9.1"
+    "jquery": "~1.9.1",
+    "jquery-ui": "~1.10.2"
   },
   "install": {
     "path": "tmp",
@@ -14,5 +14,10 @@
         "themes/smoothness/jquery-ui.css"
       ]
     }
-  }
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
 }

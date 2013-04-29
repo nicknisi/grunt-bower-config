@@ -32,8 +32,8 @@ module.exports = function(grunt) {
         var bower = require('bower'),
             done = this.async(),
             startPath = process.cwd() + '/',
-            bowerrc = grunt.file.exists(startPath + '/.bowerrc') ? grunt.file.readJSON(startPath + '/.bowerrc') : {json: 'component.json', directory: 'components'},
-            component = grunt.file.readJSON(bowerrc && bowerrc.json ? startPath + bowerrc.json : startPath + 'component.json');
+            bowerrc = grunt.file.exists(startPath + '/.bowerrc') ? grunt.file.readJSON(startPath + '/.bowerrc') : {json: 'bower.json', directory: 'components'},
+            component = grunt.file.readJSON(bowerrc && bowerrc.json ? startPath + bowerrc.json : startPath + 'bower.json');
 
         grunt.log.writeln('running bower install task');
         bower.commands.install()
